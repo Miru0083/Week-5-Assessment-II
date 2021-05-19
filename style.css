@@ -1,0 +1,166 @@
+body {
+    background-image: url(images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+}
+
+body {
+    margin: 15em;
+}
+
+.container {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 50% 50%;
+}
+
+header {
+    margin-left: 32em;
+    margin-bottom: 1em
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.content p {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.one {
+    color: white;
+    background-color: hsl(248, 32%, 49%);
+    height: 50px;
+    width: 36em;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    border-radius: 10px;
+    border: 1px;
+    margin-bottom: 10px;
+}
+
+form {
+    color: hsl(246, 25%, 77%);
+    font-family: 'Poppins',sans-serif;
+}
+
+input {
+    width: 30em;
+    height: 40px;
+    border-radius: 5px;
+    margin: 10px 0;
+    border: 1px solid hsl(246, 25%, 77%);
+    padding-left: 15px;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+.two {
+    color: white;
+    background-color: hsl(154, 59%, 51%);
+    height: 45px;
+    width: 31.5em;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-left: 30px;
+    border: 1px solid;
+    margin-top: 10px;   
+}
+
+footer p{
+    font-family: 'Poppins',sans-serif;
+    font-size: 10px;
+    color: hsl(246, 25%, 77%);
+    margin-left: 70px;
+}
+
+.form {
+    background-color: white;
+    border-radius: 10px;
+    height: 25em;  
+}
+
+input[type=text] {
+    font-family: 'Poppins',sans-serif;
+}
+
+.one:hover {
+    box-shadow: 0 0 30px 0 rgba(0,0,0,0.2);
+}
+
+
+
+/* mobile screen sizes iPhone X 375 x 812 */
+
+
+@media screen and (max-width: 600px) {
+
+.one {
+    margin-top: 81em;
+    float: right;
+    margin-right: 10em;
+    width: 50em;
+    height: 157px;
+}
+
+.container {
+    display: grid;
+    grid-column: auto;
+    grid-gap: 67em;
+}
+
+.form {
+    height: 37em;
+    width: 42em;
+    margin-left: 9em;
+}
+
+body {
+    margin: 1em;
+}
+
+.two {
+    height:75px;
+    width: 45.5;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 58px;
+    text-align: center;
+}
+
+input {
+    width: 44em;
+    height: 84px;
+}
+
+div .content {
+    width: 41em;
+    margin-left: 12em;
+    margin-top: 20em;
+}
+
+footer {
+    padding-left: 5em;
+}
+
+.content p {
+    font-size: 37px;
+    text-align: center;
+}
+
+
+}
+
+
+
+
+
+
+
