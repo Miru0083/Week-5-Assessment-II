@@ -9,7 +9,7 @@ body {
 
 .container {
     display: grid;
-    grid-gap: 30px;
+    grid-gap: 1.875em;
     grid-template-columns: 50% 50%;
 }
 
@@ -22,25 +22,25 @@ h2 {
     font-family: 'Poppins', sans-serif;
     color: white;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 2.5em;
 }
 
 .content p {
     color: white;
     font-family: 'Poppins', sans-serif;
-    font-size: 14px;
+    font-size: 0.875em;
 }
 
 .one {
     color: white;
     background-color: hsl(248, 32%, 49%);
-    height: 50px;
+    height: 4em;
     width: 36em;
     font-family: 'Poppins',sans-serif;
     font-weight: 500;
-    border-radius: 10px;
-    border: 1px;
-    margin-bottom: 10px;
+    border-radius: 0.625em;
+    border: 0.0625em;
+    margin-bottom: 0.625em;
 }
 
 form {
@@ -50,39 +50,40 @@ form {
 
 input {
     width: 30em;
-    height: 40px;
-    border-radius: 5px;
-    margin: 10px 0;
-    border: 1px solid hsl(246, 25%, 77%);
-    padding-left: 15px;
-    margin-left: 30px;
-    margin-top: 15px;
+    height: 3.5em;
+    border-radius: 0.3125em;
+    margin: 0.625em 0;
+    border: 0.0625em solid hsl(246, 25%, 77%);
+    padding-left: 0.9375em;
+    margin-left: 1.875em;
+    margin-top: 0.9375em;
 }
 
 .two {
     color: white;
     background-color: hsl(154, 59%, 51%);
-    height: 45px;
+    height: 3.5em;
     width: 31.5em;
     font-family: 'Poppins',sans-serif;
     font-weight: 500;
-    border-radius: 5px;
-    margin-left: 30px;
-    border: 1px solid;
-    margin-top: 10px;   
+    border-radius: 0.3125em;
+    margin-left: 1.875em;
+    border: 0.0625em solid;
+    margin-top: 0.625em;   
 }
 
 footer p{
     font-family: 'Poppins',sans-serif;
-    font-size: 10px;
+    font-size: 0.625em;
     color: hsl(246, 25%, 77%);
-    margin-left: 70px;
+    text-align: center;
 }
 
 .form {
     background-color: white;
-    border-radius: 10px;
-    height: 25em;  
+    border-radius: 0.625em;
+    height: 25em;
+    width: 30em;  
 }
 
 input[type=text] {
@@ -90,22 +91,22 @@ input[type=text] {
 }
 
 .one:hover {
-    box-shadow: 0 0 30px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 0 1.875em 0 rgba(0,0,0,0.2);
 }
 
 
 
-/* mobile screen sizes iPhone X 375 x 812 */
+/* mobile screen sizes Moto G4 360 x 640 */
 
 
 @media screen and (max-width: 600px) {
 
 .one {
-    margin-top: 81em;
+    margin-top: 20em;
     float: right;
-    margin-right: 10em;
-    width: 50em;
-    height: 157px;
+    margin-right: 1em;
+    width: 26em;
+    height: 6.8125em;
 }
 
 .container {
@@ -115,9 +116,8 @@ input[type=text] {
 }
 
 .form {
-    height: 37em;
-    width: 42em;
-    margin-left: 9em;
+    margin-top: -57em;
+    margin-left: 10em;
 }
 
 body {
@@ -125,34 +125,31 @@ body {
 }
 
 .two {
-    height:75px;
-    width: 45.5;
-    border-radius: 10px;
+    height:4.6875em;
+    width: 21.5em;
+    border-radius: 0.625em;
 }
 
 h2 {
-    font-size: 58px;
+    font-size: 1.625em;
     text-align: center;
+    margin-left: 6em;
 }
 
 input {
-    width: 44em;
-    height: 84px;
-}
-
-div .content {
-    width: 41em;
-    margin-left: 12em;
-    margin-top: 20em;
+    width: 20em;
+    height: 4.25em;
 }
 
 footer {
-    padding-left: 5em;
+    font-size: 0.625em;
+    text-align: center;
 }
 
 .content p {
-    font-size: 37px;
+    font-size: 0.875em;
     text-align: center;
+    margin-left: 11em;
 }
 
 
