@@ -35,7 +35,7 @@ h2 {
     color: white;
     background-color: hsl(248, 32%, 49%);
     height: 4em;
-    width: 36em;
+    width: 34.5em;
     font-family: 'Poppins',sans-serif;
     font-weight: 500;
     border-radius: 0.625em;
@@ -82,8 +82,8 @@ footer p{
 .form {
     background-color: white;
     border-radius: 0.625em;
-    height: 25em;
-    width: 30em;  
+    height: 100%;
+    width: 29em;  
 }
 
 input[type=text] {
