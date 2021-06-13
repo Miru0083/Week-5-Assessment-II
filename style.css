@@ -1,163 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-image: url(images/bg-intro-desktop.png);
     background-color: hsl(0, 100%, 74%);
 }
 
-body {
-    margin: 15em;
-}
-
 .container {
-    display: grid;
-    grid-gap: 1.875em;
-    grid-template-columns: 50% 50%;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    padding: 100px;
 }
 
-header {
-    margin-left: 32em;
-    margin-bottom: 1em
-}
-
-h2 {
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    font-weight: 700;
-    font-size: 2.5em;
-}
-
-.content p {
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-size: 0.875em;
-}
-
-.one {
-    color: white;
-    background-color: hsl(248, 32%, 49%);
-    height: 4em;
-    width: 34.5em;
-    font-family: 'Poppins',sans-serif;
-    font-weight: 500;
-    border-radius: 0.625em;
-    border: 0.0625em;
-    margin-bottom: 0.625em;
-}
-
-form {
-    color: hsl(246, 25%, 77%);
-    font-family: 'Poppins',sans-serif;
-}
-
-input {
-    width: 30em;
-    height: 3.5em;
-    border-radius: 0.3125em;
-    margin: 0.625em 0;
-    border: 0.0625em solid hsl(246, 25%, 77%);
-    padding-left: 0.9375em;
-    margin-left: 1.875em;
-    margin-top: 0.9375em;
-}
-
-.two {
-    color: white;
-    background-color: hsl(154, 59%, 51%);
-    height: 3.5em;
-    width: 31.5em;
-    font-family: 'Poppins',sans-serif;
-    font-weight: 500;
-    border-radius: 0.3125em;
-    margin-left: 1.875em;
-    border: 0.0625em solid;
-    margin-top: 0.625em;   
-}
-
-footer p{
-    font-family: 'Poppins',sans-serif;
-    font-size: 0.625em;
-    color: hsl(246, 25%, 77%);
-    text-align: center;
-}
-
-.form {
-    background-color: white;
-    border-radius: 0.625em;
+ .left{
     height: 100%;
-    width: 29em;  
-}
-
-input[type=text] {
-    font-family: 'Poppins',sans-serif;
-}
-
-.one:hover {
-    box-shadow: 0 0 1.875em 0 rgba(0,0,0,0.2);
-}
-
-
-
-/* mobile screen sizes Moto G4 360 x 640 */
-
-
-@media screen and (max-width: 600px) {
-
-.one {
-    margin-top: 20em;
-    float: right;
-    margin-right: 1em;
-    width: 26em;
-    height: 6.8125em;
-}
-
-.container {
+    width: 50%;
+    color: white;
     display: grid;
-    grid-column: auto;
-    grid-gap: 67em;
+    align-items: center;
+    justify-content: center;
+} 
+
+.right{
+    height: 100%;
+    width: 40%;
+    padding: 0 25px;
 }
 
-.form {
-    margin-top: -57em;
-    margin-left: 10em;
-}
-
-body {
-    margin: 1em;
-}
-
-.two {
-    height:4.6875em;
-    width: 21.5em;
+.top{
+    height: 50px;
+    background-color: hsl(248, 32%, 49%);
+    font-family: 'Poppins',sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: white;
+    width: 100%;
     border-radius: 0.625em;
+    text-align:center;
+    padding: 15px;
+    
 }
 
-h2 {
-    font-size: 1.625em;
-    text-align: center;
-    margin-left: 6em;
+.bottom{
+    height: 400px;
+    background-color: white;
+    width: 100%;
+    border-radius: 10px;
 }
 
-input {
-    width: 20em;
-    height: 4.25em;
-}
-
-footer {
-    font-size: 0.625em;
-    text-align: center;
+.content h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    padding: 0 80px 30px;
 }
 
 .content p {
-    font-size: 0.875em;
+    font-family: 'Poppins',sans-serif;
+    font-size: 13px;
+    padding: 0 80px 100px;
+}
+
+input {
+    width: 90%;
+    height: 3.5em;
+    border-radius: 5px;
+    border: 1px solid hsl(246, 25%, 77%);
+    margin: 10px 20px;
+    padding: 0 20px;
+}
+
+.one {
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    height: 3.5em;
+    width: 90%;
+    font-family:'Poppins',sans-serif;
+    font-weight: 500;
+    border-radius: 5px;
+    margin:8px 20px;
+    border: 1px solid hsl(154, 59%, 51%);
+}
+
+.bottom p {
+    font-family: 'Poppins',sans-serif;
+    font-size: 11px;
+    color: hsl(246, 25%, 77%);
     text-align: center;
-    margin-left: 11em;
 }
 
-
+.form input {
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    font-size: 13px;
 }
 
+@media only screen and (max-width: 600px){
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .right, .left {
+        width: 100%;
+    }
+
+    .content h2 {
+        text-align: center;
+        font-size: 27px;
+        padding:0 80px 29px;
+    }
+
+    .content p {
+       padding: 0 0 49px;
+       text-align: center;
+       font-size: 14px; 
+       font-weight: 500;   
+    }
+
+    .top {
+        width: 306px;
+        height: 65px;
+        margin: 0 -5%;
+    }
+
+    .bottom {
+        width: 19em;
+        margin: 0 -5%;
+    }
 
 
-
-
-
-
+}
